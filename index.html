@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Moderna</title>
+    <style>
+        :root {
+            --color-primary: #2c3e50;
+            --color-secondary: #34495e;
+            --color-accent: #3498db;
+            --color-light: #ecf0f1;
+            --color-text: #333333;
+            --color-card: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--color-light);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .nav-button {
+            background-color: var(--color-accent);
+            color: white;
+            border: none;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-button i {
+            font-size: 1.3rem;
+        }
+        
+        .content {
+            padding: 5rem 0;
+            background-color: var(--color-card);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--color-primary);
+            font-size: 2.2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: var(--color-light);
+            border-radius: 10px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .feature-card p {
+            color: var(--color-text);
+            opacity: 0.8;
+        }
+        
+        footer {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .simple-links {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .simple-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .simple-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-button {
+                width: 80%;
+                justify-content: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenido a nuestro Terroristas de la Tech</h1>
+            
+            <div class="button-container">
+                <a href="" class="nav-button">
+                    <i class="fas fa-cogs"></i> Servicios
+                </a>
+                <a href="" class="nav-button">
+                    <i class="fas fa-box-open"></i> Productos
+                </a>
+                <a href="" class="nav-button">
+                    <i class="fas fa-users"></i> Nosotros
+                </a>
+                <a href="" class="nav-button">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </div>
+            
+            <div class="simple-links">
+                <a href="./Misa-Cortes/index.html" class="simple-link">Ir a la app de Misael</a>
+                <a href="./proyectos/proyecto2.html" class="simple-link">Ver proyecto 2</a>
+                <a href="./proyectos/proyecto3.html" class="simple-link">Ver proyecto 3</a>
+                <a href="./proyectos/proyecto4.html" class="simple-link">Ver proyecto 4</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Los Terroristas de la Tech. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
